@@ -1,0 +1,13 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    ruby-kafka (0.6.8)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  ruby-kafka
+
+BUNDLED WITH
+   1.16.1
