@@ -1,0 +1,13 @@
+{
+  "name": "sqlite",
+  "config": {
+    "connector.class": "io.confluent.connect.jdbc.JdbcSinkConnector",
+    "tasks.max": "10",
+    "topics": "PAYOUTS",
+    "connection.url": "jdbc:sqlite:/root/payouts.db",
+    "auto.create": "true",
+    "pk.mode": "record_value",
+    "pk.fields": "MONTH,MERCHANT_ID",
+    "insert.mode": "upsert"
+  }
+}

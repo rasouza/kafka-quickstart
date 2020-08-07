@@ -1,0 +1,59 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    activesupport (6.0.3.2)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (>= 0.7, < 2)
+      minitest (~> 5.1)
+      tzinfo (~> 1.1)
+      zeitwerk (~> 2.2, >= 2.2.2)
+    avro (1.10.0)
+      multi_json (~> 1)
+    avro_turf (1.1.0)
+      avro (>= 1.7.7, < 1.11)
+      excon (~> 0.71)
+    concurrent-ruby (1.1.6)
+    concurrent-ruby-ext (1.1.6)
+      concurrent-ruby (= 1.1.6)
+    digest-crc (0.6.1)
+      rake (~> 13.0)
+    excon (0.76.0)
+    exponential-backoff (0.0.4)
+    i18n (1.8.5)
+      concurrent-ruby (~> 1.0)
+    little-plugger (1.1.4)
+    logging (2.3.0)
+      little-plugger (~> 1.1)
+      multi_json (~> 1.14)
+    minitest (5.14.1)
+    multi_json (1.15.0)
+    phobos (1.9.0)
+      activesupport (>= 3.0.0)
+      concurrent-ruby (>= 1.0.2)
+      concurrent-ruby-ext (>= 1.0.2)
+      exponential-backoff
+      logging
+      ruby-kafka
+      thor
+    rake (13.0.1)
+    regexp-examples (1.5.1)
+    ruby-kafka (1.2.0)
+      digest-crc
+    thor (1.0.1)
+    thread_safe (0.3.6)
+    tzinfo (1.2.7)
+      thread_safe (~> 0.1)
+    zeitwerk (2.4.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  activesupport
+  avro_turf
+  phobos
+  regexp-examples
+  ruby-kafka
+
+BUNDLED WITH
+   2.1.4

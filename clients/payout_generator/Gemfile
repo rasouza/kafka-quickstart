@@ -1,0 +1,7 @@
+source 'https://rubygems.org'
+
+gem 'ruby-kafka'
+gem 'avro_turf', require: 'avro_turf/messaging'
+gem 'phobos'
+gem 'regexp-examples'
+gem 'activesupport', require: 'active_support/all'
