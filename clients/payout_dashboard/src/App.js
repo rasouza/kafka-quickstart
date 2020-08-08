@@ -1,19 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import axios from "axios";
-import "semantic-ui-css/semantic.min.css";
 import { Card, Icon, Image } from "semantic-ui-react";
+import { useInterval } from './useInterval';
+import "semantic-ui-css/semantic.min.css";
 
 function App() {
   const [payouts, setPayouts] = useState([])
 
-  useEffect(() => {
-    const fetchPayouts = async () => {
-      const payouts = await axios("http://localhost:8080/api/payouts")
-      setPayouts(payouts.data)
-    }
-
-    fetchPayouts()
-  }, []);
+  useInterval(async () => {
+    console.log("Polling payouts...")
+    const payouts = await axios("http://localhost:8080/api/payouts")
+    setPayouts(payouts.data)
+  }, 100)
 
   return (
     <Card.Group itemsPerRow={5}>
