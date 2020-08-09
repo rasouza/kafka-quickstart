@@ -12,6 +12,7 @@ This is a brief hands-on overview about Confluent's Kafka key components. After 
 3. [Schema Registry](docs/schema-registry.md)
 4. [KSQL](docs/ksql.md)
 5. [Kafka Connect](docs/connect.md)
+6. **BONUS** [Legacy Dashboard Consumer](docs/legacy-consumer.md)
 
 ## Installation
 ```
